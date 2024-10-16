@@ -1,0 +1,14 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/emails
+    username: user
+    password: password
+  rabbitmq:
+    password: password
+    username: user
+broker:
+  queue:
+    email:
+      name: default.email
